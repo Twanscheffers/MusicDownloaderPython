@@ -20,16 +20,16 @@ def myClick():
 
 
 root = Tk()
+root.geometry("400x160")
+root.resizable(False, False)
 e = Entry(root, width=50, borderwidth=2)
 e.pack()
 
 folder_path = StringVar()
 #test commit de laatste poging vandaag
-myCanvas = Canvas(root, height=100, width=400, bg="#263D42")
-myCanvas.pack()
-myButton1 = Button(root, text = "Download", command=myClick)
-myButton1.pack()
-myButton2 = Button(root, text="Browse path", command=openFile)
-myButton2.pack()
+myCanvas = Canvas(root, height=100, width=400, bg="#FFFFFF").pack()
+downloadButton = Button(root, text = "Download", width=24, command=myClick).place(x=1, y=127)
+pathButton = Button(root, text="Browse path", width=24, command=openFile).place(x=200, y=127)
+
 
 root.mainloop()
