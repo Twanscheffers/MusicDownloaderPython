@@ -3,6 +3,7 @@ from pytube import YouTube
 from tkinter import *
 from tkinter import filedialog as fd
 
+#functie die een bestand opent
 def openFile():
     global folder_path
     pathname = fd.askdirectory()
