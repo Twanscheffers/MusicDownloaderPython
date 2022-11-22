@@ -14,7 +14,7 @@ def myClick():
     #maak een functie die de download start en de link pakt uit de entry e
     yt = YouTube(e.get())
     video = yt.streams.filter(only_audio=True).first()
-    out_file = video.download(output_path=folder_path)
+    out_file = video.download(output_path=folder_path.get())
     base, ext = os.path.splitext(out_file)
     new_file = base + '.mp3'
     os.rename(out_file, new_file)
