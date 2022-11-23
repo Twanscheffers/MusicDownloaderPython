@@ -29,5 +29,6 @@ folder_path = StringVar()
 myCanvas = Canvas(root, height=100, width=400, bg="#FFFFFF").pack()
 downloadButton = Button(root, text = "Download", width=24, command=myClick).place(x=1, y=127)
 pathButton = Button(root, text="Browse path", width=24, command=openFolder).place(x=200, y=127)
+label2 = Label(root, text="Dit is een test", height=600).pack()
 
 root.mainloop()
